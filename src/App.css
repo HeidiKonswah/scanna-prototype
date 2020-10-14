@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+header {
+    background-color: #227C9D;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+    list-style-type: none;
+    display: flex;
+    margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header ul {
+    padding: 20px 40px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header ul svg {
+    fill: #fafafa;
+    width: 16px;
+    height: 16px;
+    padding: 0px 6px;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+    margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickable {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.clickable:hover{
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%; 
+    height: 700px;
+    background-image: url("./scan.png");
+    background-size: cover;
+    
+}
+
+.banner nav {
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.banner nav h2 {
+    padding: 0px 60px;
+    margin:0;
+    color: #000;
+    z-index: 1000;
+    letter-spacing: -3px;
+}
+/* .banner nav .clickable:hover {
+    text-decoration: none;
+    color: #227C9D
+} */
+
+.banner nav ul {
+    padding: 30px 40px;
+    font-weight: bold;
+    color: #f1fffa;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.actionBtn {
+    padding: 10px 20px;
+    color: #f1fffa;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.banner nav .actionBtn{
+    border-radius: 5px;
+    background-color: rgba(157, 47, 47);
+}
+
+.banner nav .actionBtn:hover {
+    background-color: #C74343;
+}
+.overlay {
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    /* background-color: #000; */
+    background-color: rgba(0, 0, 0, 0.2);
+    width:100%; 
+    height:100%;
+    /* opacity: 0.3; */
+}
+.intro {
+    width: 40%;
+    padding: 100px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+.intro .actionBtn {
+    border-radius: 40px;
+    background-color: #227C9D;
+    padding: 20px 30px;
+    z-index: 100;
+}
+
+.intro #mainTitle{
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 20px 0px;
+    color:#F1FFFA;
+    z-index: 100;
+    filter: drop-shadow(.05em .05em #333);
+}
+
+.intro #welcome {
+    font-weight: bold;
+    color: #227C9D;
+    z-index: 100;
+}
+
+.intro p {
+    z-index: 100;
+    width: 80%;
+    color: #f1fffa;
+    
+}
+
+#about {
+    line-height: 25px;
+    margin:0; 
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.intro .actionBtn:hover {
+    background-color: #36A9D3;
 }
