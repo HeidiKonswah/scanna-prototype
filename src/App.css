@@ -44,12 +44,13 @@ ul li {
     height: 700px;
     background-image: url("./scan.png");
     background-size: cover;
+    position: relative;
     
 }
 
 .banner nav {
     width: 100%; 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,15 +64,11 @@ ul li {
     z-index: 1000;
     letter-spacing: -3px;
 }
-/* .banner nav .clickable:hover {
-    text-decoration: none;
-    color: #227C9D
-} */
 
 .banner nav ul {
-    padding: 30px 40px;
+    padding: 20px 40px;
     font-weight: bold;
-    color: #f1fffa;
+    color: #fafafa;
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -79,7 +76,7 @@ ul li {
 
 .actionBtn {
     padding: 10px 20px;
-    color: #f1fffa;
+    color: #fafafa;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-weight: bold;
@@ -124,7 +121,7 @@ ul li {
     font-size: 3em;
     font-weight: bolder;
     margin: 20px 0px;
-    color:#F1FFFA;
+    color:#fafafa;
     z-index: 100;
     filter: drop-shadow(.05em .05em #333);
 }
@@ -138,7 +135,7 @@ ul li {
 .intro p {
     z-index: 100;
     width: 80%;
-    color: #f1fffa;
+    color: #fafafa;
     
 }
 
@@ -151,4 +148,45 @@ ul li {
 
 .intro .actionBtn:hover {
     background-color: #36A9D3;
+}
+
+#services-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1.5fr;
+    height: 100%;
+    padding: 0px 60px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+#services-container h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#services-container #list {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    
+}
+#list p{
+    margin: 10px 0px;  
+}
+
+ #list section p{
+    color: #666;
+}
+
+form {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    background-color: #fff;
+    width:100%; 
+    height:100%;
 }
